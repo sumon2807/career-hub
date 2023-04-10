@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { FeaturedContext } from '../../App';
 
 const Featured = () => {
+    const features=useContext(FeaturedContext)
+    console.log(features)
     return (
         <div className='container mx-auto'>
             <div className='text-center mb-10'>

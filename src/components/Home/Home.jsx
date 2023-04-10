@@ -1,8 +1,11 @@
 import React from 'react';
-import Category from '../Category/Category';
 import Featured from '../Featured/Featured';
+import { useLoaderData } from 'react-router-dom';
+import Categories from '../Categories/Categories';
+
 
 const Home = () => {
+    const categoryData=useLoaderData();
     return (
         <div>
             <div className='flex lg:flex-row  container mx-auto my-10 items-center flex-col-reverse'>
@@ -12,10 +15,12 @@ const Home = () => {
                     <button className='btn-primary'>Get Started</button>
                 </div>
                 <div className="banner-image w-3/4 mt-10">
-                    <img src="../../../public/All Images/P3OLGJ1 copy 1.png" className='w-full' alt="" />
+                    <img src="/All Images/P3OLGJ1 copy 1.png" className='w-full' alt="" />
                 </div>
             </div>
-            <Category></Category>
+            <Categories
+            categoryData={categoryData}
+            ></Categories>
             <Featured></Featured>
         </div>
     );

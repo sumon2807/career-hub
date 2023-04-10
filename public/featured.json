@@ -1,0 +1,78 @@
+[
+    {
+      "id": 1,
+      "index": 0,
+      "companyLogo": "https://example.com/logo1.png",
+      "jobTitle": "Software Engineer",
+      "companyName": "ABC Corp",
+      "jobType": "Full-time",
+      "location": "New York, NY",
+      "address": "123 Main St",
+      "time": "9am-5pm",
+      "salaryRange": "$80,000 - $120,000",
+      "jobDescription": "We are seeking a talented software engineer to join our growing team.",
+      "jobResponsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and writing high-quality code.",
+      "keywords": ["software", "engineer", "collaboration", "coding"]
+    },
+    {
+      "id": 2,
+      "index": 1,
+      "companyLogo": "https://example.com/logo2.png",
+      "jobTitle": "Marketing Manager",
+      "companyName": "XYZ Inc",
+      "jobType": "Part-time",
+      "location": "Los Angeles, CA",
+      "address": "456 Elm St",
+      "time": "Flexible",
+      "salaryRange": "$50,000 - $70,000",
+      "jobDescription": "We are seeking a dynamic marketing manager to help us promote our brand and products.",
+      "jobResponsibility": "Responsibilities include developing and executing marketing campaigns, analyzing data to measure performance, and collaborating with internal and external stakeholders.",
+      "keywords": ["marketing", "manager", "campaigns", "analysis"]
+    },
+    {
+      "id": 3,
+      "index": 2,
+      "companyLogo": "https://example.com/logo3.png",
+      "jobTitle": "Sales Representative",
+      "companyName": "LMN Corp",
+      "jobType": "Commission-based",
+      "location": "Chicago, IL",
+      "address": "789 Oak St",
+      "time": "Flexible",
+      "salaryRange": "Commission-based",
+      "jobDescription": "We are seeking a motivated sales representative to help us expand our customer base.",
+      "jobResponsibility": "Responsibilities include identifying potential customers, presenting our products and services, and closing deals.",
+      "keywords": ["sales", "representative", "customers", "deals"]
+    },
+    {
+      "id": 4,
+      "index": 3,
+      "companyLogo": "https://example.com/logo4.png",
+      "jobTitle": "Graphic Designer",
+      "companyName": "PQR Inc",
+      "jobType": "Full-time",
+      "location": "Seattle, WA",
+      "address": "101 Pine St",
+      "time": "9am-5pm",
+      "salaryRange": "$60,000 - $80,000",
+      "jobDescription": "We are seeking a talented graphic designer to help us create visually stunning designs.",
+      "jobResponsibility": "Responsibilities include developing visual concepts, collaborating with cross-functional teams, and delivering high-quality designs.",
+      "keywords": ["graphic", "designer", "visuals", "collaboration"]
+    },
+    {
+      "id": 5,
+      "index": 4,
+      "companyLogo": "https://example.com/logo5.png",
+      "jobTitle": "Data Analyst",
+      "companyName": "RST Inc",
+      "jobType": "Full-time",
+      "location": "San Francisco, CA",
+      "address": "222 Market St",
+      "time": "9am-6pm",
+      "salaryRange": "$70,000 - $100,000",
+      "jobDescription": "We are seeking a data analyst to help us analyze and interpret data to drive business decisions.",
+      "jobResponsibility": "Responsibilities include gathering and analyzing data, creating reports and visualizations, and presenting findings to stakeholders.",
+      "keywords": ["data", "analyst", "reporting", "visualization"]
+      }
+      ]
+  
