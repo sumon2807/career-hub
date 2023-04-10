@@ -2,14 +2,14 @@
     {
       "id": 1,
       "index": 0,
-      "companyLogo": "https://example.com/logo1.png",
-      "jobTitle": "Software Engineer",
-      "companyName": "ABC Corp",
+      "companyLogo": "https://i.ibb.co/tmb5Dby/google-1-1-1.png",
+      "jobTitle": "Technical Database Engineer",
+      "companyName": "Google LLC",
       "jobType": "Full-time",
-      "location": "New York, NY",
+      "location": "Dhaka, Bangladesh",
       "address": "123 Main St",
       "time": "9am-5pm",
-      "salaryRange": "$80,000 - $120,000",
+      "salaryRange": "100K - 150K",
       "jobDescription": "We are seeking a talented software engineer to join our growing team.",
       "jobResponsibility": "Responsibilities include designing and implementing software solutions, collaborating with cross-functional teams, and writing high-quality code.",
       "keywords": ["software", "engineer", "collaboration", "coding"]
@@ -17,14 +17,14 @@
     {
       "id": 2,
       "index": 1,
-      "companyLogo": "https://example.com/logo2.png",
-      "jobTitle": "Marketing Manager",
-      "companyName": "XYZ Inc",
+      "companyLogo": "https://i.ibb.co/dgYYPMG/netflix-4-1.png",
+      "jobTitle": "Senior Product Designer",
+      "companyName": "Netflix",
       "jobType": "Part-time",
-      "location": "Los Angeles, CA",
+      "location": "Dhaka, Bangladesh",
       "address": "456 Elm St",
       "time": "Flexible",
-      "salaryRange": "$50,000 - $70,000",
+      "salaryRange": "$100K - 150K",
       "jobDescription": "We are seeking a dynamic marketing manager to help us promote our brand and products.",
       "jobResponsibility": "Responsibilities include developing and executing marketing campaigns, analyzing data to measure performance, and collaborating with internal and external stakeholders.",
       "keywords": ["marketing", "manager", "campaigns", "analysis"]
@@ -32,14 +32,14 @@
     {
       "id": 3,
       "index": 2,
-      "companyLogo": "https://example.com/logo3.png",
-      "jobTitle": "Sales Representative",
-      "companyName": "LMN Corp",
+      "companyLogo": "https://i.ibb.co/B6Q25rz/tesla-9-1.png",
+      "jobTitle": "Software Engineer",
+      "companyName": "Tesla",
       "jobType": "Commission-based",
       "location": "Chicago, IL",
       "address": "789 Oak St",
       "time": "Flexible",
-      "salaryRange": "Commission-based",
+      "salaryRange": "$100K - 150K",
       "jobDescription": "We are seeking a motivated sales representative to help us expand our customer base.",
       "jobResponsibility": "Responsibilities include identifying potential customers, presenting our products and services, and closing deals.",
       "keywords": ["sales", "representative", "customers", "deals"]
@@ -47,14 +47,14 @@
     {
       "id": 4,
       "index": 3,
-      "companyLogo": "https://example.com/logo4.png",
-      "jobTitle": "Graphic Designer",
-      "companyName": "PQR Inc",
+      "companyLogo": "https://i.ibb.co/MssHzfd/Group-10021.png",
+      "jobTitle": "Technical Database Engineer",
+      "companyName": "Google LLC",
       "jobType": "Full-time",
       "location": "Seattle, WA",
       "address": "101 Pine St",
       "time": "9am-5pm",
-      "salaryRange": "$60,000 - $80,000",
+      "salaryRange": "$100K - 150K",
       "jobDescription": "We are seeking a talented graphic designer to help us create visually stunning designs.",
       "jobResponsibility": "Responsibilities include developing visual concepts, collaborating with cross-functional teams, and delivering high-quality designs.",
       "keywords": ["graphic", "designer", "visuals", "collaboration"]
@@ -62,7 +62,7 @@
     {
       "id": 5,
       "index": 4,
-      "companyLogo": "https://example.com/logo5.png",
+      "companyLogo": "https://i.ibb.co/rbnYLYR/Career-Hub.png",
       "jobTitle": "Data Analyst",
       "companyName": "RST Inc",
       "jobType": "Full-time",
@@ -75,4 +75,4 @@
       "keywords": ["data", "analyst", "reporting", "visualization"]
       }
       ]
-  
+
