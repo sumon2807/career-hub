@@ -4,7 +4,7 @@ import Feature from '../Feature/Feature';
 
 const Featured = () => {
     const features=useContext(FeaturedContext)
-    console.log(features)
+
     return (
         <div className='container mx-auto'>
             <div className='text-center mb-10'>

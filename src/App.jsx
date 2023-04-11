@@ -7,7 +7,7 @@ export const FeaturedContext=createContext('data');
 
 const App = () => {
 
-const [features, setFeatures]=useState([])
+const [features, setFeatures]=useState([]);
 
   useEffect(()=>{
     fetch('featured.json')
@@ -17,8 +17,8 @@ const [features, setFeatures]=useState([])
   return (
     <div>
       <FeaturedContext.Provider value={features}>
-        <Header></Header>
-        <Outlet></Outlet>
+            <Header></Header>
+            <Outlet></Outlet>
       </FeaturedContext.Provider>
     </div>
   );

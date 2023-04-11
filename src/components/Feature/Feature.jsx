@@ -1,7 +1,8 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Feature = ({feature}) => {
-    const {address, companyLogo, companyName, jobType, location, salaryRange, jobTitle}=feature
+    const {id, companyLogo, companyName, jobType, location, salaryRange, jobTitle}=feature;
     return (
         <div className='border-2 p-10 rounded-lg'>
             <img src={companyLogo} alt="" />
@@ -12,7 +13,7 @@ const Feature = ({feature}) => {
                 <p className='text-xl font-semibold text-slate-600'>Location: {location}</p>
                 <p className='text-xl font-semibold text-slate-600'>Salary: {salaryRange}</p>
             </div>
-            <button className='btn-primary mt-5'>View Details</button>
+            <Link to={`/jobDetails/${id}`}><button className='btn-primary mt-5'>View Details</button></Link>
         </div>
     );
 };
