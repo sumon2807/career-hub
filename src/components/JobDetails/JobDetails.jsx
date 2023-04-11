@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
     const {id}=useParams();
@@ -15,6 +17,10 @@ const JobDetails = () => {
             setData(details)
         }
     },[])
+
+    const toster=()=>{
+        toast.success('Successfully Applied!');
+    }
     
     return (
         <div className='container mx-auto'>
@@ -40,7 +46,11 @@ const JobDetails = () => {
                     <p className='text-base text-slate-700'><span className='font-semibold'>Phone: </span>{phone}</p>
                     <p className='text-base text-slate-700'><span className='font-semibold'>Email: </span>{email}</p>
                     <p className='text-base text-slate-700'><span className='font-semibold'>Address: </span>{address}</p>
-                    <button className='btn-primary text-slate-800 mt-4'>Apply Now</button>
+                    <button onClick={()=>toster()} className='btn-primary text-slate-800 mt-4'>Apply Now</button>
+                    <ToastContainer 
+                    position="top-center"
+                    reverseOrder={false}
+                    />
               </div>
             </div>
         </div>
