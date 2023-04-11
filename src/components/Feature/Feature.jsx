@@ -3,6 +3,11 @@ import { Link } from 'react-router-dom';
 
 const Feature = ({feature}) => {
     const {id, companyLogo, companyName, jobType, location, salaryRange, jobTitle}=feature;
+
+   
+
+
+    
     return (
         <div className='border-2 p-10 rounded-lg'>
             <img src={companyLogo} alt="" />
