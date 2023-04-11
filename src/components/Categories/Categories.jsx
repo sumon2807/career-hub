@@ -6,7 +6,7 @@ const Categories = ({categoryData}) => {
     return (
         <div className='container mx-auto'>
             <div className='text-center mb-10'>
-               <h1 className='text-5xl font-extrabold mt-32'>Job Category List</h1>
+               <h1 className='text-slate-800 text-5xl font-extrabold mt-32'>Job Category List</h1>
               <p className='font-medium text-base text-slate-600 pt-4'>Explore thousands of job opportunities with all the information you need. Its your future</p>
            </div>
             <div className='grid lg:grid-cols-4 gap-6'>

@@ -51,7 +51,14 @@ const Statistics = () => {
 
     return (
        <div className=' container mx-auto'>
-            <div className='grid grid-cols-1 justify-items-center mt-20'>
+            <div className='flex justify-between'>
+              <img src="../../../public/All Images/Vector-1.png" alt="" />
+              <img src="../../../public/All Images/Vector-1.png" alt="" />
+            </div>
+            <div className='grid grid-cols-1 justify-items-center mt-10 w-full'>
+            <div className='text-center mb-14'>
+                <h1 className='text-4xl font-extrabold underline text-slate-800'>Assainment Marks</h1>
+            </div>
                 <ComposedChart
                     width={750}
                     height={500}

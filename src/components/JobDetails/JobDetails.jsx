@@ -5,18 +5,31 @@ import 'react-toastify/dist/ReactToastify.css';
 
 const JobDetails = () => {
     const {id}=useParams();
-    // console.log(id)
     const detailsData=useLoaderData();
-    // console.log(detailsData)
-
     const [data, setData]=useState({});
     const {jobDescription,jobResponsibility,salaryRange,address,phone,email,requirements,experiences,jobTitle}=data
+    
     useEffect(()=>{
         if(detailsData){
             const details=detailsData.find(dt=> dt.id==id);
             setData(details)
         }
     },[])
+
+    const [totalData, setTotalData]=useState([])
+    const handleApplyButton=(data)=>{
+        toster();
+        const appliedData=[...totalData, data ];
+        setTotalData(appliedData);
+
+        const storedData=localStorage.getItem('totalApply');
+        if(storedData){
+            appliedData=JSON.parse(storedData);
+            console.log(appliedData)
+        }else{
+            localStorage.setItem('totalApply', JSON.stringify(appliedData));
+        }
+    }
 
     const toster=()=>{
         toast.success('Successfully Applied!');
@@ -46,7 +59,7 @@ const JobDetails = () => {
                     <p className='text-base text-slate-700'><span className='font-semibold'>Phone: </span>{phone}</p>
                     <p className='text-base text-slate-700'><span className='font-semibold'>Email: </span>{email}</p>
                     <p className='text-base text-slate-700'><span className='font-semibold'>Address: </span>{address}</p>
-                    <button onClick={()=>toster()} className='btn-primary text-slate-800 mt-4'>Apply Now</button>
+                    <button onClick={()=>handleApplyButton(data)} className='btn-primary text-slate-800 mt-4'>Apply Now</button>
                     <ToastContainer 
                     position="top-center"
                     reverseOrder={false}
