@@ -36,10 +36,6 @@ const router=createBrowserRouter([
       {
         path: 'appliedjob',
         element: <AppliedJobs></AppliedJobs>
-      },
-      {
-        path: 'blog',
-        element: <Blog></Blog>
       }
     ]
   }
