@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Feature = ({feature}) => {
-    const {id, companyLogo, companyName, jobType, location, salaryRange, jobTitle}=feature;
+    const {id, companyLogo, companyName, jobType, location, salaryRange, jobTitle,jobLocationType}=feature;
 
     
     return (
@@ -10,7 +10,10 @@ const Feature = ({feature}) => {
                 <img src={companyLogo} alt="" />
                 <h1 className='mt-4 text-2xl font-extrabold text-slate-600'>{jobTitle}</h1>
                 <h4 className='text-xl font-semibold text-slate-600'>{companyName}</h4>
-                <button className='text-cyan-600 border border-cyan-600 p-2 rounded-lg my-2'>{jobType}</button>
+                <div className='flex '>
+                <button className='text-cyan-600 border border-cyan-600 p-2 rounded-lg my-2'>{jobLocationType}</button>
+                <button className='text-cyan-600 border border-cyan-600 p-2 rounded-lg my-2 ml-2'>{jobType}</button>
+                </div>
             <div className='flex gap-4'>
                 <p className='text-xl font-semibold text-slate-600'>Location: {location}</p>
                 <p className='text-xl font-semibold text-slate-600'>Salary: {salaryRange}</p>
