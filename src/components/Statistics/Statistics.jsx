@@ -52,8 +52,8 @@ const Statistics = () => {
     return (
        <div className=' container mx-auto'>
             <div className='flex justify-between'>
-              <img src="../../../public/All Images/Vector-1.png" alt="" />
-              <img src="../../../public/All Images/Vector-1.png" alt="" />
+              <img src="/All Images/Vector-1.png" alt="" />
+              <img src="/All Images/Vector-1.png" alt="" />
             </div>
             <div className='grid grid-cols-1 justify-items-center mt-10 w-full'>
             <div className='text-center mb-14'>

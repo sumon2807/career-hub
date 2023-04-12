@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import AppliedJobs from '../AppliedJobs/AppliedJobs';
 
 const JobDetails = () => {
     const {id}=useParams();
@@ -16,28 +17,40 @@ const JobDetails = () => {
         }
     },[])
 
+// data save to local storage
     const [totalData, setTotalData]=useState([])
     const handleApplyButton=(data)=>{
         toster();
-        const appliedData=[...totalData, data ];
-        setTotalData(appliedData);
 
-        const storedData=localStorage.getItem('totalApply');
-        if(storedData){
-            appliedData=JSON.parse(storedData);
-            console.log(appliedData)
-        }else{
-            localStorage.setItem('totalApply', JSON.stringify(appliedData));
+        const previousData=JSON.parse(localStorage.getItem('totalApply'));
+        if(previousData){
+            const isbookmark=previousData.find(ap=> ap.id==id);
+            if(isbookmark){
+                alert('Already Applied');
+            }
+            else{
+                const appliedData=[...previousData, data ];
+                localStorage.setItem('totalApply', JSON.stringify(appliedData));
+            }
         }
+        else{
+            const appliedData=[...totalData, data ];
+            localStorage.setItem('totalApply', JSON.stringify(appliedData));
+            setTotalData(appliedData);
+        }  
     }
-
+// toster function
     const toster=()=>{
         toast.success('Successfully Applied!');
     }
     
     return (
         <div className='container mx-auto'>
-            <div className='text-center mt-10 '>
+            <div className='flex justify-between'>
+              <img src="/All Images/Vector-1.png" alt="" />
+              <img src="/All Images/Vector-1.png" alt="" />
+            </div>
+            <div className='text-center'>
                 <h1 className='text-5xl font-extrabold underline text-slate-800'>Job Details</h1>
             </div>
             <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-10 mt-20 items-center p-8 lg:p-0 md:p-0 '>

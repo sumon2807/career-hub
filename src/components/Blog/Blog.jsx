@@ -4,8 +4,8 @@ const Blog = () => {
     return (
         <div className='container mx-auto '>
             <div className='flex justify-between'>
-            <img src="../../../public/All Images/Vector-1.png" alt="" />
-            <img src="../../../public/All Images/Vector-1.png" alt="" />
+            <img src="/All Images/Vector-1.png" alt="" />
+            <img src="/All Images/Vector-1.png" alt="" />
             </div>
             <div className='text-center mb-14 '>
                 <h1 className='text-5xl font-extrabold underline text-slate-800'>My Blog</h1>
