@@ -53,7 +53,7 @@ const JobDetails = () => {
             <div className='text-center'>
                 <h1 className='text-5xl font-extrabold underline text-slate-800'>Job Details</h1>
             </div>
-            <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-10 mt-20 items-center p-8 lg:p-0 md:p-0 '>
+            <div className='grid lg:grid-cols-2 md:grid-cols-2 gap-10 mt-20 items-center p-8 lg:p-0 md:p-0 lg:mb-20'>
               <div className="job-details ">
                 <p className='text-base text-slate-500'><span className='font-bold text-slate-800'>Job Description: </span>{jobDescription}</p>
                 <p className='text-base text-slate-500'><span className='font-bold text-slate-800'>Job Responsibility: </span>{jobResponsibility}</p>

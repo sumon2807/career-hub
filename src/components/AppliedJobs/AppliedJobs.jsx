@@ -22,7 +22,7 @@ console.log(jobs)
             <div className='text-center'>
                 <h1 className='text-5xl font-extrabold underline text-slate-800'>Applied Jobs</h1>
             </div>
-            <div className='my-20 border-2 rounded-xl p-4'>
+            <div className='my-20 rounded-xl m-4 grid justify-items-center'>
                 {
                     jobs.map(job=> <Job
                     key={job.id}
